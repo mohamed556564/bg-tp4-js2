@@ -270,6 +270,11 @@ function filtrer() {
     let moyenne = Number(document.getElementById("form_moy").value);
 
     let rows = document.querySelectorAll("table tr");
+    
+    if (moyenne <= 0){
+        alert("Veuillez choisir une moyenne valide !");
+        return;
+    }
 
     if (critere === "passants") {
         for (let i = 1; i < rows.length; i++) {
@@ -293,6 +298,8 @@ function filtrer() {
                 rows[i].querySelector("input").checked = false;
             }
         }
+    } else {
+        alert("Veuillez choisir un filtre valide !");
+        return;
     }
-
 }
