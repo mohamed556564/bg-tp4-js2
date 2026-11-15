@@ -48,12 +48,22 @@
             <button class="btn-consol" onclick="consoleTableau()">Console Tableau</button>
             <button class="btn-del" onclick="deleteRow()">Supprimer</button>
             <select id="selectTri">
-                <option value="">-- Choisir un tri --</option>
+                <option value="" disabled selected>-- Choisir un tri --</option>
                 <option value="nom">Trier par Nom (A-Z)</option>
                 <option value="points-des">Trier par Points (des)</option>
                 <option value="points-asd">Trier par Points (asd)</option>
             </select>
             <button onclick="trier()">Trier</button>
+            <button onclick="filtrer()">filtrer</button>
+            <select id="selectFiltre">
+                <option value="" disabled selected>-- Choisir le filtre --</option>
+                <option value="passants">filtrer les passants</option>
+                <option value="redoublants">filtrer les redoublants</option>
+            </select>
+            <div class="form_group">
+                <label class="form_label">Moyenne de passage:</label>
+                <input type="number" id="form_moy" class="form_field">
+            </div>
         </div>
     </div>
 

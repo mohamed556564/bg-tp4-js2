@@ -264,3 +264,35 @@ function afficherListe(liste) {
 
     updateSummary();
 }
+
+function filtrer() {
+    let critere = document.getElementById("selectFiltre").value;
+    let moyenne = Number(document.getElementById("form_moy").value);
+
+    let rows = document.querySelectorAll("table tr");
+
+    if (critere === "passants") {
+        for (let i = 1; i < rows.length; i++) {
+
+            let point = Number(rows[i].querySelectorAll("td")[3].textContent);
+
+            if (point >= moyenne) {
+                rows[i].querySelector("input").checked = true;
+            }else{
+                rows[i].querySelector("input").checked = false;
+            }
+        }
+    } else if(critere === "redoublants"){
+        for (let i = 1; i < rows.length; i++) {
+
+            let point = Number(rows[i].querySelectorAll("td")[3].textContent);
+
+            if (point < moyenne) {
+                rows[i].querySelector("input").checked = true;
+            }else{
+                rows[i].querySelector("input").checked = false;
+            }
+        }
+    }
+
+}
