@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#table_container {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 40px; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: small;
+}
+thead {
+    text-align: center;
+    background-color: #347fca;
+    color: white;
+}
+
+.col_text {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+td .col_text {
+    text-align: left;
+}
+th .col_text {
+    text-align: center;
+}
+
+.col_number,.col_checkbox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+

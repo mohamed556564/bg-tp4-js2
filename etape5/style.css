@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#table_container {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 40px 0px 40px; 
+}
+
+#form_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: small;
+}
+
+#container_summary {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f3f5;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    padding-right: 100px;
+}
+
+
+thead {
+    text-align: center;
+    background-color: #347fca;
+    color: white;
+}
+
+.col_text {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+}
+
+td .col_text {
+    text-align: left;
+}
+th .col_text {
+    text-align: center;
+}
+
+.col_number,.col_checkbox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
