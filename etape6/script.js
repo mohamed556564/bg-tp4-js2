@@ -169,3 +169,8 @@ function consoleTableau() {
     // Slide 33 : Utilisation de la console
     console.log(persons);
 }
+
+/* 
+Lorsque l'on actualise la page, toutes les lignes que l'on venait de supprimer réapparaissent dans le tableau.   
+Les modifications apportées au DOM sont exécutées uniquement côté client et de manière volatile en mémoire.
+*/

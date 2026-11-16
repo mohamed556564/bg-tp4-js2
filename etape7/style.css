@@ -27,6 +27,37 @@
     gap: 10px;
 }
 
+.filtrer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#flt , #tri{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1982a2;
+    color: white;
+}
+
+.btn-find {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #db8a44;
+    color: white;
+    margin-left: 5px;
+}
+
+#form_moy{
+    width: 70px;
+    padding: 10px;
+}
+
 .btn-consol {
     padding: 10px 20px;
     border: none;

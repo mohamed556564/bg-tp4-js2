@@ -303,3 +303,8 @@ function filtrer() {
         return;
     }
 }
+
+/*
+Tous les fichiers de code source exécutés par le navigateur sont totalement publics et accessibles à l'utilisateur via l'onglet Network.
+Mettre des informations sensibles (mots de passe, clés secrètes) ou des règles de sécurité dans le code côté client est très dangereux, car un utilisateur peut facilement les lire, les voler ou modifier le code pour contourner les restrictions.
+ */

@@ -53,8 +53,10 @@
                 <option value="points-des">Trier par Points (des)</option>
                 <option value="points-asd">Trier par Points (asd)</option>
             </select>
-            <button onclick="trier()">Trier</button>
-            <button onclick="filtrer()">filtrer</button>
+            <button id="tri" onclick="trier()">Trier</button>
+        </div>
+        <div class="filtrer">
+        <button id="flt" onclick="filtrer()">filtrer</button>
             <select id="selectFiltre">
                 <option value="" disabled selected>-- Choisir le filtre --</option>
                 <option value="passants">filtrer les passants</option>
@@ -66,5 +68,4 @@
             </div>
         </div>
     </div>
-
 </body>
